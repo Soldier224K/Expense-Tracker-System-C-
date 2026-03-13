@@ -9,7 +9,7 @@ const int MAX_EXPENSES = 100;
 string formatCategory(string category) {
     if (category.empty()) return category;
     category[0] = toupper(category[0]);
-    for (size_t i = 1; i < category.length(); i++) {
+    for (int i = 1; i < category.length(); i++) {
         category[i] = tolower(category[i]);
     }
     return category;
